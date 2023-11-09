@@ -18,11 +18,11 @@ public class Bmi {
             double tmp = height/100;
             double BMI = weight / (tmp * tmp);
             System.out.println("あなたのBMIは・・・");
-            System.out.println(String.format("%.1f",BMI ));
+            System.out.println(String.format("%.2f",BMI ));
             System.out.println("です。");
-            if (BMI <= 18.5) {
+            if (BMI < 18.5) {
                 System.out.println("いっぱい食べたほうがいいよねやっぱり");
-            } else if (BMI >= 25) {
+            } else if (BMI > 25) {
                 System.out.println("運動したらいいと思うよ寒いけどね");
             } else {
                 System.out.println("正常です。現状維持！！");
